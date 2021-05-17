@@ -32,8 +32,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Final Solution](https://lnkd.in/gPwsGyR)
-- Live Site URL: [Live Server](https://lordaldi.github.io/StatsPreviewCardComponent-FrontEndMentor/index.html)
+- Solution URL: [Final Solution](https://www.frontendmentor.io/solutions/3columnpreviewcardcomponent-with-button-hover-outline-MaBy5tDUS)
+- Live Site URL: [Live Server](https://lordaldi.github.io/3ColumnPreviewCardComponent-FrontEndMentor/)
 
 ## My process
 
