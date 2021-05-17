@@ -1,20 +1,119 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
 
 :root {
+  --primary-color-1: hsl(31, 77%, 52%);
+  --primary-color-2: hsl(184, 100%, 22%);
+  --primary-color-3: hsl(179, 100%, 13%);
+  --neutral-color-1: hsla(0, 0%, 100%, 0.75);
+  --neutral-color-2: hsl(0, 0%, 95%);
 }
 *,
 *:before,
 *:after {
-  box-sizing: inherit;
   margin: 0;
   padding: 0;
 }
 
 html {
   box-sizing: border-box;
+  font-size: 15px;
 }
 body {
+  font-family: "Lexend Deca", sans-serif;
+  color: var(--neutral-color-2);
+  background-color: var(--neutral-color-1);
 }
+.container {
+  margin-right: auto; /* 1 */
+  margin-left: auto; /* 1 */
 
+  max-width: 1024px; /* 2 */
+
+  padding: 1.2em; /* 3 */
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  max-width: 380px;
+  margin: 0 auto;
+}
+.card-item {
+  padding: 3em;
+}
+.card-item:nth-child(1) {
+  background-color: var(--primary-color-1);
+  border-radius: 10px 10px 0 0;
+}
+.card-item:nth-child(1) .main-button {
+  color: var(--primary-color-1);
+}
+.card-item:nth-child(2) {
+  background-color: var(--primary-color-2);
+}
+.card-item:nth-child(2) .main-button {
+  color: var(--primary-color-2);
+}
+.card-item:nth-child(3) {
+  background-color: var(--primary-color-3);
+  border-radius: 0 0 10px 10px;
+}
+.card-item:nth-child(3) .main-button {
+  color: var(--primary-color-3);
+}
+.card-icon {
+  margin-bottom: 2em;
+}
+.card-title {
+  font-family: "Big Shoulders Display", cursive;
+  text-transform: uppercase;
+  font-size: 3rem;
+  margin-bottom: 0.8em;
+}
+.card-subtitle {
+  line-height: 1.5;
+  font-size: 1.2rem;
+  margin-bottom: 1.5em;
+  color: var(--neutral-color-1);
+}
+.main-button {
+  box-sizing: border-box;
+  transition: all 0.25s;
+  background-color: var(--neutral-color-2);
+  border-radius: 50px;
+  color: transparent;
+  padding: 1.2em 2.5em;
+  font-weight: bold;
+  border: none;
+  border: 3px solid rgba(0, 0, 0, 0);
+  /* margin: 3px; */
+}
+.main-button:hover,
+.main-button:active {
+  margin: 0px;
+  background-color: transparent;
+  color: var(--neutral-color-2) !important;
+  /* outline: 3px solid var(--neutral-color-1); */
+  border: 3px solid var(--neutral-color-2);
+}
 @media (min-width: 768px) {
+  .card {
+    flex-direction: row;
+    max-width: max-content;
+    margin-top: 7em;
+  }
+  .card-item {
+    padding: 2.7em;
+  }
+  .card-item:nth-child(1) {
+    border-radius: 10px 0 0 10px;
+  }
+
+  .card-item:nth-child(3) {
+    background-color: var(--primary-color-3);
+    border-radius: 0 10px 10px 0;
+  }
+  .card-subtitle {
+    margin-bottom: 5em;
+  }
 }
